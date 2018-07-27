@@ -1,0 +1,53 @@
+<!Doctype html>
+
+<html lang="en">
+
+
+<head>
+	<title> July 25 </title>
+
+	<script>
+	
+	
+	//var FirstNumber= prompt ("Enter first number");
+	//var SecondNumber = prompt ("Enter second number");
+	//var result = parseInt(FirstNumber) + parseInt(SecondNumber);
+	
+	//alert(result);
+	
+	function add(){
+		var FirstNumber = document.getElementById("FirstNumber").value;
+		var SecondNumber = document.getElementById("SecondNumber").value;
+		
+		document.getElementById("result").innerHTML=parseInt(FirstNumber)+parseInt(SecondNumber);
+		//alert (parseInt (FirstNumber) + parseInt (SecondNumber));
+	}
+	
+	function multi(){
+		var FirstNumber = document.getElementById("FirstNumber").value;
+		var SecondNumber = document.getElementById("SecondNumber").value;
+		
+		document.getElementById("result").innerHTML = parseInt(FirstNumber) * parseInt(SecondNumber);
+		//alert (parseInt (FirstNumber) * parseInt (SecondNumber));
+	}
+	
+	fucntion add(var a, var b){
+		
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<input type="text" id="FirstNumber" placeholder="First number here"><br><br>
+	
+	<input type="text" id="SecondNumber" placeholder="Second number here"><br><br>
+	
+	<button onclick="add()">Add</button> <br><br> <button onclick="multi()">Multiply</button> <br><br>
+	
+	<h1 id="result"></h1>
+	
+</body>
+
+</html>

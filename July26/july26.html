@@ -1,0 +1,63 @@
+<!Doctype html>
+
+<html lang="en">
+
+
+<head>
+	<title> July 26 - Javascript Conditions </title>
+
+	<script>
+		
+		//var age = prompt("Enter your age");
+		//var age = parseInt(age);
+		
+			//if(age >= 18) {
+				//alert("Go and vote!")
+			//}
+			//else {
+				//alert("You cannot vote")
+			//}
+		
+		function oddEven(){
+			var firstNumber = document.getElementById("firstNumber").value;
+			var firstNumber = parseInt(firstNumber);
+				if(firstNumber % 2 == 0) {
+					alert("This is an Even Number!")
+				}
+				else{
+					alert("This is an Odd Number!")
+				}
+			
+		}
+		
+		function oddEvenOr(){
+			var secondNumber = document.getElementById("secondNumber").value;
+			var secondNumber = parseInt(secondNumber);
+				if(secondNumber % 2 == 0) {
+					alert("This is an Even Number!")
+				}
+				else if(secondNumber % 2 == 1) {
+					alert("This is an Odd Number!")
+				}
+				else if(secondNumber == 0) {
+					alert("This is neither!")
+				}
+			
+		}
+
+		
+	</script>
+
+</head>
+
+<body>
+	<br><br>
+	<input type="text" id="firstNumber" placeholder="Enter your number here"><br><br>
+	<button onclick="oddEven()">Odd or Even?</button>
+
+	<br><br><br><br>
+	<input type="text" id="secondNumber" placeholder="Enter your number here"><br><br>
+	<button onclick="oddEvenOr()">Odd, Even or Not?</button>
+</body>
+
+</html>
